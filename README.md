@@ -1,6 +1,6 @@
 # WhatsApper
 ## Steps:
-* Download Hinglish Stop Words: https://www.kaggle.com/datasets/prxshetty/stop-words-hinglish for Analysis and App.
+* Download Hinglish Stop Words: https://www.kaggle.com/datasets/prxshetty/stop-words-hinglish for Preprocessing and App.
 * Download WhatsApp Chat History for Group/Individual:
 * Create project
 * Install:
