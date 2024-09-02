@@ -7,3 +7,6 @@
 2. pip install urlextract
 3. pip install matplotlib
 4. pip install wordcloud
+* To run the app, use play button for app.py or in terminal write streamlit run app.py.
+* To stop the app, use stop button for app.py or in terminal, click on cross at top and then Terminate.
+* To deploy on Heroku, follow last step of Deploymnent in Movie Recommendation System project.
