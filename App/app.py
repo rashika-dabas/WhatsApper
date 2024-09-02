@@ -24,7 +24,7 @@ if uploaded_file is not None:
 
     if st.sidebar.button('Show Analysis'):
 
-        st.title('Chat Analysis and Statistics')
+        st.title('Chat Statistics and Analysis')
 
         messages, words, media_messages, links = helper.fetch_stats(selected, df)
 

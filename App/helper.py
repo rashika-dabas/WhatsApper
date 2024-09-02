@@ -26,7 +26,7 @@ def fetch_stats(selected, df):
 def most_active_user(df):
     x = df['user'].value_counts().head()
     df = round((df['user'].value_counts() / df.shape[0]) * 100, 2).reset_index().rename(
-        columns={'index': 'Name', 'user': 'Percentage'})
+        columns = {'user': 'Name', 'count': 'Percentage'})
     return x, df
 
 
@@ -76,6 +76,9 @@ def mon_timeline(selected, df):
     for i in range(timeline.shape[0]):
         time.append(timeline['month'][i] + " - " + str(timeline['year'][i]))
     timeline['time'] = time
+    timeline1 = timeline[timeline['year']==2021].sort_values('month_num').reset_index(drop=True)
+    timeline2 = timeline[timeline['year']==2022].sort_values('month_num').reset_index(drop=True)
+    timeline = pd.concat([timeline1,timeline2],axis=0)
     return timeline
 
 
